@@ -15,13 +15,15 @@
         width: 1366px;
         height: 600px;
         margin: 100px auto;
-        background: url("./images/bg.jpg");
+        background: url(./bg.jpg);
         overflow: hidden;
       }
       .left{
         width: 50%;
         height: 100%;
         float: left;
+        background:url(./fm.jpg)  no-repeat left top;
+
         transition: all 2s;
         overflow: hidden;
       }
@@ -29,6 +31,7 @@
         width: 50%;
         height: 100%;
         margin-left:-50%;
+        background: url(./fm.jpg) no-repeat right top;
         float: right;
         transition: all 2s;
         overflow: hidden;
@@ -50,11 +53,8 @@
   <body>
     <div class="box">
       <div class="left">
-        <img src="./images/fm.jpg" alt="">
-
       </div>
       <div class="right">
-        <img src="./images/fm.jpg" alt="">
       </div>
     </div>
   </body>
