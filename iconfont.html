@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            width: 200px;
-            height: 100px;
-            background-color: red;
-            margin: 0 auto;
-            margin-top: 200px;
-            transition: all 2s;
-        }
-        div:hover{
-            transform: rotate(25deg);
+        
+        .box{
+            width: 600px;
+            height: 200px;
+            border: 1px solid ;
 
         }
-        p{
-            width: 100px;
-            height: 50px;
-            background-color: blue;
-            transform: translate(20px,200px);
+        .one{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            background-color: red;
+            transition: all 3s;
+            border-radius: 50%;
+            line-height: 200px;
+        }
+        .box:hover .one{
+            /* transform:rotate(360deg);
+            transform:translate(600px);
+            transform:rotate(360deg)translate(600px); */
+            /*推荐先位移后旋转*/transform:translate(600px)rotate(360deg);
         }
     </style>
 </head>
@@ -43,6 +47,8 @@ ________________________________________________________________________________
 
 
        《 平面转换》
+_____________________________________________________________________________________
+
         什么是平面转换
         本质上就是一个css属性transfron
         平面转换的作用
@@ -69,14 +75,24 @@ ________________________________________________________________________________
         正数是顺时针旋转
         旋转默认是沿着元素的中心点进行旋转
         Internet Explorer 10, Firefox, 和 Opera支持transform 属性.
-        Chrome 和 Safari 要求前缀 -webkit- 版本.    
+        Chrome 和 Safari 要求前缀 -webkit- 版本. 
+_____________________________________________________________________________________
+   
         3）元素的缩放：
-
-
+        a)用来修改元素的大小
+            写法
+            transform :scale(值1，值2)
+        注意缩放中的值不能带单位
+        1.第一个值代表宽度的大小
+        2.第二个值代表高度的大小
+        3.设置的值代表着倍数的意思
+        
 
 
      -->
-     <div></div>
+     <div class="box">
+        <div class="one">hhh</div>
+     </div>
      <p></p>
 </body>
 </html>
